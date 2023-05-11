@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="allergy_severity_options">
+        <item>Mild</item>
+        <item>Moderate</item>
+        <item>Severe</item>
+        <item>Life-threatening</item>
+    </string-array>
+</resources>

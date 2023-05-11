@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<EditText
+    android:id="@+id/dr_msg_edt"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+   android:layout_margin="10dp"
+    android:background="@drawable/edt_background"
+    android:hint=" enter your message here..."
+    android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dr_msg_edt"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+    <Button
+        android:id="@+id/dr_msg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+
+        />
+    <Button
+        android:id="@+id/dr_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginLeft="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/dr_msg_edt"
+        />
+    </LinearLayout>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

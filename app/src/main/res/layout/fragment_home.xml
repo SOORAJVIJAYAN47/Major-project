@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/brand_names_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit_button"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Brand Names:"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+    <TextView
+        android:id="@+id/brand_names_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brand_names_hint"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_rectangle"
+        android:elevation="16dp"
+        android:fontFamily="@font/open_sans_light"
+        android:padding="10dp"
+        android:text="Acephen, Acetadryl, Allzital, Apadaz, Arthriten Inflammatory Pain, Bupap, Butapap, Cetafen, Children's Silapap, Coricidin Hbp Cold  Flu, Darvocet-N, Dayquil Sinex, Diphen, Dolofin, Dologen, Dologesic Reformulated Jun 2016, Duralgina, Dvorah, Endocet, Esgic, Exaprin, Excedrin, Excedrin PM Triple Action, Excedrin Tension Headache, Feverall, Fioricet, Fioricet With Codeine, Goody's Back Body Pain Relief, Goody's Body Pain, Goody's Extra Strength, Goody's Headache Relief Shot, Goody's PM, Hycet, Legatrin PM, Little Fevers, Lorcet, Lortab, Mapap, Mersyndol, Midol Complete, Midol Cramps Bodyaches, Nalocet, Norco, Orbivan, Pamprin Max Formula, Pamprin Multi-symptom, Panadol, Pediacare Children's Fever Reducer Pain Reliever, Percocet, Percogesic Reformulated Jan 2011, Pharbetol, Premsyn Pms, Prolate, Rivacocet, Robaxacet, Robaxacet-8, Roxicet, Sudafed PE Sinus Headache, Tactinal, Tencon, Trezix, Triatec, Triatec-30, Triatec-8, Tylenol, Tylenol PM, Tylenol With Codeine, Ultracet, Vanatol, Vanatol S, Vanquish, Vtol, Xodol, Xolox, Zamicet, Zebutal, Zflex, Zydone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/brand_names_hint"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_rectangle"
+        android:elevation="16dp"
+        />
+    <TextView
+        android:id="@+id/generic_name_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brand_names_text"
+        android:text="Generic Name:"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+    <TextView
+        android:id="@+id/generic_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_below="@id/generic_name_hint"
+        android:text="Acetaminophen"
+        android:layout_marginTop="16dp"
+        android:background="@color/themecolor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/accession_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generic_name_text"
+        android:text="DrugBank Accession Number:"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+    <TextView
+        android:id="@+id/accession_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accession_hint"
+        android:text="DB00316"
+        android:textColor="@color/themecolor"
+        android:padding="20dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:background="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/description_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accession_text"
+        android:text="Description:"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_hint"
+        android:background="@drawable/rounded_rectangle"
+        android:padding="10dp"
+        android:fontFamily="@font/open_sans_light"
+        android:elevation="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Acetaminophen (paracetamol), also commonly known as Tylenol, is the most commonly taken analgesic worldwide and is recommended as first-line therapy in pain conditions by the World Health Organization (WHO).10 It is also used for its antipyretic effects, helping to reduce fever.23 This drug was initially approved by the U.S. FDA in 1951 and is available in a variety of forms including syrup form, regular tablets, effervescent tablets, injection, suppository, and other forms.15,16,23,Label
+
+Acetaminophen is often found combined with other drugs in more than 600 over the counter (OTC) allergy medications, cold medications, sleep medications, pain relievers, and other products.19 Confusion about dosing of this drug may be caused by the availability of different formulas, strengths, and dosage instructions for children of different ages.19 Due to the possibility of fatal overdose and liver failure associated with the incorrect use of acetaminophen, it is important to follow current and available national and manufacturer dosing guidelines while this drug is taken or prescribed."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/type_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_text"
+        android:text="Type:"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+    <TextView
+        android:id="@+id/type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type_hint"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/groups_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type_text"
+        android:text="Groups:"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+    <TextView
+        android:id="@+id/groups_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groups_hint"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    <TextView
+        android:id="@+id/weight_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groups_text"
+        android:text="Weight:"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+    <TextView
+        android:id="@+id/weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight_hint"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/chemical_formula_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight_text"
+        android:text="Chemical Formula:"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+    <TextView
+        android:id="@+id/chemical_formula_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/rounded_rectangle5"
+        android:layout_marginTop="16dp"
+        android:text="C8H9NO2"
+        android:gravity="center"
+        android:layout_below="@id/chemical_formula_hint"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/components_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chemical_formula_text"
+        android:layout_marginTop="16dp"
+        android:text="Components:"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/components_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/components_label"
+        android:layout_marginTop="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/components_label"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/medicine_edit_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <EditText
+            android:id="@+id/medicine_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:hint="Enter text here"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/medicine_edit_card"
+        android:text="Submit"/>
+    <Button
+        android:id="@+id/ask_doctor_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ask the expert"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/components_list"
+        android:elevation="22dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+       />
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>
